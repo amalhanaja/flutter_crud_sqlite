@@ -27,7 +27,6 @@ class NoteRepository {
       orderBy: "${Note.COL_CREATED_AT} DESC"
       
     );
-    print(results);
     return results.map((map) => Note.fromMap(map)).toList();
   }
 
